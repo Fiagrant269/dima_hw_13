@@ -1,0 +1,37 @@
+Task 1
+let x = 20;
+let y = 58;
+let z = 42;
+
+let sum = x + y + z;
+
+console.log(sum);
+
+Task 2
+let a = 10;  
+alert(a);   
+
+a = 20;     
+
+let b = a;   
+alert(b);   
+
+Task 3
+let strCount = String(count); 
+let numUser = Number(userName);  
+
+console.log(strCount, typeof strCount); 
+console.log(numUser, typeof numUser); 
+Task 4
+let a = 1;
+let b = 2;
+let c = "белых медведей";
+
+let result = "" + a + b + " " + c;
+console.log(result);
+Task 5
+  let userName = prompt("Дима:");
+let age = prompt("25:");
+
+console.log(":", userName);
+console.log(":", age);
