@@ -1,0 +1,50 @@
+task 1
+let a = 'true';
+let b = false;
+let c = 17;
+let d = undefined;
+let e = null;
+console.log(typeof a); // string
+console.log(typeof b); // boolean
+console.log(typeof c); // number
+console.log(typeof d); // undefined
+console.log(typeof e); // object\
+task 2
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вопрос пользователю</title>
+</head>
+<body>
+
+<h1>JavaScript</h1>
+
+<script>
+    let name = prompt("Дима");
+    console.log("Имя пользователя:", name);
+
+    let age = prompt("25?");
+    console.log("Возраст пользователя:", age);
+</script>
+
+</body>
+</html>
+  task 3
+  let key = true;
+let documents = true;
+let pen = true;
+let apple = false;
+let orange = true;
+
+let shouldGoToWork = key && documents && pen && (apple || orange);
+
+console.log(shouldGoToWork);
+task 4
+  let num1 = Number(prompt("1:"));
+let num2 = Number(prompt("10:"));
+
+let remainder = num1 % num2;
+
+alert("Остаток от деления: " + remainder);
+  
