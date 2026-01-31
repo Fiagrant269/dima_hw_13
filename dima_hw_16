@@ -1,0 +1,92 @@
+task 1
+let num = Number(prompt("12:"));
+
+if (num % 2 === 0) {
+    alert("Число чётное");
+} else {
+    alert("Число нечётное");
+}
+task 2
+let lang = prompt("skript.js:").toLowerCase();
+
+if (lang === "javascript" || lang === "js") {
+    alert("Вы frontend-разработчик");
+} else if (lang === "python" || lang === "java" || lang === "c++") {
+    alert("Вы backend-разработчик");
+} else {
+    alert("Язык не распознан");
+}
+task 3 через IF
+let lang = prompt("Enter a language:").toLowerCase();
+
+if (lang === "russian") {
+    alert("Привет");
+} else if (lang === "english") {
+    alert("Hello");
+} else if (lang === "italian") {
+    alert("Ciao");
+} else if (lang === "spanish") {
+    alert("Hola");
+} else if (lang === "french") {
+    alert("Salut");
+} else {
+    alert("Sorry, I don’t know this language");
+}
+task 3 Через swith
+let lang = prompt("Enter a language:").toLowerCase();
+
+switch (lang) {
+    case "russian":
+        alert("Привет");
+        break;
+    case "english":
+        alert("Hello");
+        break;
+    case "italian":
+        alert("Ciao");
+        break;
+    case "spanish":
+        alert("Hola");
+        break;
+    case "french":
+        alert("Salut");
+        break;
+    default:
+        alert("Sorry, I don’t know this language");
+}
+task 4
+let question = prompt("Задайте вопрос Клаве:").toLowerCase();
+
+if (question === "как тебя зовут?") {
+    alert("Клава");
+} else if (question === "как у тебя дела?") {
+    alert("Хорошо, а у тебя?");
+} else if (question === "сколько тебе лет?") {
+    alert("Много-много");
+} else {
+    alert("Я еще не знаю таких слов");
+}
+task 5
+let num = Number(prompt("Введите число:"));
+
+if (num % 3 === 0 && num % 5 === 0) {
+    alert("FizBuz");
+} else if (num % 5 === 0) {
+    alert("Fiz");
+} else if (num % 3 === 0) {
+    alert("Buz");
+}
+task 6
+let direction = prompt("В какую сторону света вы хотите отправиться?").toLowerCase();
+
+if (direction === "юг") {
+    console.log("На юг пойдешь — счастье найдешь");
+} else if (direction === "север") {
+    console.log("На север пойдешь — много денег найдешь");
+} else if (direction === "запад") {
+    console.log("На запад пойдешь — верного друга найдешь");
+} else if (direction === "восток") {
+    console.log("На восток пойдешь — разработчиком станешь");
+} else {
+    console.log("Неверное направление, попробуйте еще раз");
+}
