@@ -1,0 +1,125 @@
+task 1
+function sayHello() {
+    console.log("Привет, мир!");
+}
+
+sayHello();
+task 2
+function getSquare(num) {
+    return num * num;
+}
+
+console.log(getSquare(5));
+task 3
+function isEven(num) {
+    return num % 2 === 0;
+}
+
+console.log(isEven(4)); 
+console.log(isEven(7)); 
+task 4
+function applyDiscount(price, discountPercent) {
+    let discountAmount = price * (discountPercent / 100);
+    return price - discountAmount;
+}
+
+console.log(applyDiscount(1000, 20));
+console.log(applyDiscount(500, 10)); 
+task 5
+function getSum(n) {
+    let sum = 0;
+
+    for (let i = 0; i <= n; i++) {
+        sum += i;
+    }
+
+    return sum;
+}
+
+console.log(getSum(100));
+task 6
+function trimString(str, from, to) {
+    return str.slice(from, to);
+}
+
+console.log(trimString("Hello world", 0, 5));
+console.log(trimString("JavaScript", 4, 10)); 
+task 7
+function getSumNumbers(num) {
+    let str = String(num);
+    for (let i = 0; i < str.length; i++) {
+        sum += Number(str[i]); 
+    }
+    return sum;
+}
+console.log(getSumNumbers(2021)); 
+task 8
+function foo() {
+    console.log("foo");
+}
+
+function boo() {
+    console.log("boo");
+}
+
+function fooboo(flag, fooFunc, booFunc) {
+    if (flag) {
+        fooFunc();
+    } else {
+        booFunc();
+    }
+}
+fooboo(true, foo, boo); 
+fooboo(false, foo, boo); 
+
+ADVANCED level
+task 1
+function canBuildTriangle(a, b, c) {
+    return a + b > c &&
+           a + c > b &&
+           b + c > a;
+}
+console.log(canBuildTriangle(3, 4, 5));
+console.log(canBuildTriangle(1, 2, 3));
+task 2
+// Константы
+const TAX_RATE = 0.2;        // 20% налог
+const PHONE_PRICE = 300;     // цена телефона
+const ACCESSORY_PRICE = 30;  // цена аксессуара
+
+// Баланс пользователя (ввод)
+let balance = Number(prompt("Введите баланс вашего банковского счета:"));
+
+// Переменные для расчёта 
+let total = 0;
+let phonesCount = 0;
+
+// Функция расчёта налога 
+function calculateTax(amount) {
+    return amount * TAX_RATE;
+}
+
+// Функция форматирования цены 
+function formatCurrency(amount) {
+    return "$" + amount.toFixed(2);
+}
+
+// Покупаем телефоны, пока хватает денег
+while (total + PHONE_PRICE + ACCESSORY_PRICE <= balance) {
+    total += PHONE_PRICE + ACCESSORY_PRICE;
+    phonesCount++;
+}
+
+// Добавляем налог 
+total += calculateTax(total);
+
+//Вывод информации
+console.log("Куплено телефонов:", phonesCount);
+console.log("Общая стоимость покупки:", formatCurrency(total));
+
+// Проверяем, хватает ли денег 
+if (total <= balance) {
+    console.log("Покупка возможна ✅");
+} else {
+    console.log("Недостаточно средств ❌");
+}
