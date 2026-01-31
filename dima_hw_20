@@ -1,0 +1,95 @@
+task 1
+let arr = [1, 2, 3, 4, 5];
+arr.reverse();
+console.log(arr); 
+let evenArr = arr.filter(num => num % 2 === 0);
+console.log(evenArr);
+evenArr = evenArr.concat([2, 4]);
+console.log(evenArr);
+let sum = evenArr.reduce((total, num) => total + num, 0);
+console.log(sum); 
+task 2
+let fruits = ['apple', 'orange', 'banana', 'grape'];
+let hasBanana = fruits.includes('banana');
+console.log(hasBanana);
+task 3
+const animals = ['monkey', 'dog', 'cat'];
+console.log(animals[animals.length - 1]);
+task 4
+const students = ['Polina', 'Dasha', 'Masha'];
+
+students.pop();
+students.push('Borya');
+
+students.shift();
+students.unshift('Andrey');
+
+console.log(students);
+task 5
+const evenNumbers = [2, 4, 6, 8, 10];
+const oddNumbers = [1, 3, 5, 7, 9];
+
+const allNumbers = evenNumbers.concat(oddNumbers);
+const index = allNumbers.indexOf(8);
+console.log(allNumbers);
+console.log(index);
+task 6
+const binary = [0, 0, 0, 0];
+let result = "0" + binary.join("1") + "0";
+console.log(result);
+ADVANCED level
+function isPalindrome(word) {
+    word = word.toLowerCase();
+
+    for (let i = 0; i < word.length / 2; i++) {
+        if (word[i] !== word[word.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPalindrome("level")); 
+console.log(isPalindrome("hello"));
+task 2
+const matrix = [
+    [12, 98, 78, 65, 23],
+    [54, 76, 98, 43, 65],
+    [13, 324, 65, 312],
+    [9092, 22, 45, 90000],
+];
+let sum = 0;
+let count = 0;
+for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+        sum += matrix[i][j];
+        count++;
+    }
+}
+let average = sum / count;
+console.log(average);
+task 3
+const mixedNumbers = [-14, 24, -89, 43, 0, -1, 412, 4];
+
+let positiveNumbers = [];
+let negativeNumbers = [];
+for (let num of mixedNumbers) {
+    if (num >= 0) {
+        positiveNumbers.push(num);
+    } else {
+        negativeNumbers.push(num);
+    }
+}
+console.log("Положительные:", positiveNumbers);
+console.log("Отрицательные:", negativeNumbers);
+task 4
+let numbers = [];
+for (let i = 0; i < 5; i++) {
+    let randomNum = Math.floor(Math.random() * 10) + 1; // числа от 1 до 10
+    numbers.push(randomNum);
+}
+let cubedNumbers = [];
+for (let num of numbers) {
+    cubedNumbers.push(num ** 3);
+}
+сonsole.log("Исходный массив:", numbers);
+console.log("Числа в кубе:", cubedNumbers);
