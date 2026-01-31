@@ -1,0 +1,32 @@
+Task 1
+let str = 'inodm';
+
+alert(str[0]); // i
+alert(str[2]); // o
+alert(str[3]); // d
+task 2
+let str = 'inodm';
+let num = 2;
+
+alert(str[num]);
+Task 3
+let str = "inodm";
+
+let result = str[str.length - 3];
+alert(result);
+Task 4
+let str = '12543';
+
+let sum = Number(str[0]) +
+          Number(str[1]) +
+          Number(str[2]) +
+          Number(str[3]) +
+          Number(str[4]);
+
+console.log(sum);
+task 5
+let name = prompt("Дима:");
+let age = prompt("25:");
+
+console.log("Имя:", name);
+console.log("Возраст:", age);
